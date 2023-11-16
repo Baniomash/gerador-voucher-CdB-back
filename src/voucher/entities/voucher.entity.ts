@@ -8,6 +8,6 @@ export class Voucher {
     @Column({ type: 'varchar', length: 18, unique: true})
     voucherCode: string;
 
-    @Column({ type: 'varchar', length: 12, nullable: true})
+    @Column({ type: 'varchar', length: 14, nullable: true})
     clientCpf: string;
 }

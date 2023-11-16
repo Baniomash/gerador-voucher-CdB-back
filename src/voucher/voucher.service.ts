@@ -1,9 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { CreateVoucherDto } from './dto/create-voucher.dto';
-import { UpdateVoucherDto } from './dto/update-voucher.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Voucher } from './entities/voucher.entity';
-import { Repository, getConnection } from 'typeorm';
+import { Repository } from 'typeorm';
 
 @Injectable()
 export class VoucherService {
