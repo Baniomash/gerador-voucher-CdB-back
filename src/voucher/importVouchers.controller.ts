@@ -7,7 +7,7 @@ export class ImportVouchersController {
 
   @Post('import')
   async importCsv(): Promise<string> {
-    const filePath = '../data.csv';
+    const filePath = '../src/data.csv';
     return await this.importVouchersService.importCsvToDatabase(filePath);
   }
 }
